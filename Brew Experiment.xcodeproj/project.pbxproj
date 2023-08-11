@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9256E1372A8623CB0012F9DF /* brewData.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 9256E1362A8623CB0012F9DF /* brewData.geojson */; };
+		9256E1382A8623CB0012F9DF /* brewData.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 9256E1362A8623CB0012F9DF /* brewData.geojson */; };
+		9256E13B2A8624B10012F9DF /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9256E13A2A8624B10012F9DF /* ModelData.swift */; };
+		9256E13D2A86266E0012F9DF /* BrewMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9256E13C2A86266E0012F9DF /* BrewMethod.swift */; };
+		9256E1402A866C610012F9DF /* BrewProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9256E13F2A866C610012F9DF /* BrewProcessView.swift */; };
 		92D7E0382A85583500C95227 /* Brew Experiment Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 92D7E0372A85583500C95227 /* Brew Experiment Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		92D7E03D2A85583500C95227 /* Brew_ExperimentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D7E03C2A85583500C95227 /* Brew_ExperimentApp.swift */; };
 		92D7E03F2A85583500C95227 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D7E03E2A85583500C95227 /* ContentView.swift */; };
@@ -15,6 +20,7 @@
 		92D7E04E2A85583A00C95227 /* Brew_Experiment_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D7E04D2A85583A00C95227 /* Brew_Experiment_Watch_AppTests.swift */; };
 		92D7E0582A85583A00C95227 /* Brew_Experiment_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D7E0572A85583A00C95227 /* Brew_Experiment_Watch_AppUITests.swift */; };
 		92D7E05A2A85583A00C95227 /* Brew_Experiment_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D7E0592A85583A00C95227 /* Brew_Experiment_Watch_AppUITestsLaunchTests.swift */; };
+		92D7E06B2A857B5F00C95227 /* BrewSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D7E06A2A857B5400C95227 /* BrewSetupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9256E1362A8623CB0012F9DF /* brewData.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = brewData.geojson; sourceTree = "<group>"; };
+		9256E13A2A8624B10012F9DF /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		9256E13C2A86266E0012F9DF /* BrewMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewMethod.swift; sourceTree = "<group>"; };
+		9256E13F2A866C610012F9DF /* BrewProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewProcessView.swift; sourceTree = "<group>"; };
 		92D7E0312A85583500C95227 /* Brew Experiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brew Experiment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D7E0372A85583500C95227 /* Brew Experiment Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brew Experiment Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D7E03C2A85583500C95227 /* Brew_ExperimentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brew_ExperimentApp.swift; sourceTree = "<group>"; };
@@ -67,6 +77,7 @@
 		92D7E0532A85583A00C95227 /* Brew Experiment Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brew Experiment Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D7E0572A85583A00C95227 /* Brew_Experiment_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brew_Experiment_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		92D7E0592A85583A00C95227 /* Brew_Experiment_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brew_Experiment_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92D7E06A2A857B5400C95227 /* BrewSetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewSetupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +105,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9256E1352A8622BA0012F9DF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9256E1362A8623CB0012F9DF /* brewData.geojson */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9256E1392A8624760012F9DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9256E13A2A8624B10012F9DF /* ModelData.swift */,
+				9256E13C2A86266E0012F9DF /* BrewMethod.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9256E13E2A866BF30012F9DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92D7E03E2A85583500C95227 /* ContentView.swift */,
+				92D7E06A2A857B5400C95227 /* BrewSetupView.swift */,
+				9256E13F2A866C610012F9DF /* BrewProcessView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		92D7E02A2A85583400C95227 = {
 			isa = PBXGroup;
 			children = (
@@ -118,8 +156,10 @@
 		92D7E03B2A85583500C95227 /* Brew Experiment Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				9256E13E2A866BF30012F9DF /* Views */,
+				9256E1392A8624760012F9DF /* Model */,
+				9256E1352A8622BA0012F9DF /* Resources */,
 				92D7E03C2A85583500C95227 /* Brew_ExperimentApp.swift */,
-				92D7E03E2A85583500C95227 /* ContentView.swift */,
 				92D7E0402A85583A00C95227 /* Assets.xcassets */,
 				92D7E0422A85583A00C95227 /* Preview Content */,
 			);
@@ -236,6 +276,7 @@
 				TargetAttributes = {
 					92D7E0302A85583500C95227 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 					92D7E0362A85583500C95227 = {
 						CreatedOnToolsVersion = 15.0;
@@ -276,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9256E1372A8623CB0012F9DF /* brewData.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +327,7 @@
 			files = (
 				92D7E0442A85583A00C95227 /* Preview Assets.xcassets in Resources */,
 				92D7E0412A85583A00C95227 /* Assets.xcassets in Resources */,
+				9256E1382A8623CB0012F9DF /* brewData.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +352,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9256E1402A866C610012F9DF /* BrewProcessView.swift in Sources */,
+				92D7E06B2A857B5F00C95227 /* BrewSetupView.swift in Sources */,
+				9256E13D2A86266E0012F9DF /* BrewMethod.swift in Sources */,
+				9256E13B2A8624B10012F9DF /* ModelData.swift in Sources */,
 				92D7E03F2A85583500C95227 /* ContentView.swift in Sources */,
 				92D7E03D2A85583500C95227 /* Brew_ExperimentApp.swift in Sources */,
 			);
@@ -404,12 +451,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -459,10 +508,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -531,6 +582,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PK77UYU9YK;
@@ -539,6 +591,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "coffee.lovers.Brew-Experiment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -547,6 +600,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PK77UYU9YK;

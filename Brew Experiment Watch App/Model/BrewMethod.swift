@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct BrewMethod: Hashable, Codable, Identifiable {
+    var id: Int
+    var name: String
+}
+
+//struct BrewMethodSimplified: Hashable, Codable, Identifiable {
+//    var id: Int
+//    var name: String
+//}
