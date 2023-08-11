@@ -10,12 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            List {
+                NavigationLink("V60") { BrewSetupView(method: brewMethods[0]) }
+                NavigationLink("AeroPress") { BrewSetupView(method: brewMethods[1]) }
+            }
+            
         }
-        .padding()
     }
 }
 
