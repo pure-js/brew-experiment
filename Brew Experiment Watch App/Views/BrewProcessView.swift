@@ -30,7 +30,7 @@ struct BrewProcessView: View {
                         timeRemaining = 0
                     }
                 }
-               }
+        }
         
     }
 }
