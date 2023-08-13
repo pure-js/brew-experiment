@@ -9,16 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            List {
-                NavigationLink("V60") { BrewSetupView(method: brewMethods[0]) }
-                NavigationLink("AeroPress") { BrewSetupView(method: brewMethods[1]) }
+        NavigationStack {
+            List(brewMethods, id: \.self) { method in
+                NavigationLink(method, value: method)
             }
-            
+            .navigationDestination(for: String.self, destination: BrewSetupView.init)
+            .navigationTitle("Select a brewing method")
         }
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
