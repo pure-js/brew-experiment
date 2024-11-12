@@ -15,6 +15,7 @@ struct ContentView: View {
             }
             .navigationDestination(for: String.self, destination: BrewSetupView.init)
             .navigationTitle("Select a brewing method")
+            .padding(.vertical)
         }
     }
 }
