@@ -60,7 +60,7 @@ struct BrewSetupView: View {
             + Text("272g").font(.system(size: 18, weight: .bold))
             Text("Brew time ").font(.system(size: 18))
             + Text("3:31").font(.system(size: 18, weight: .bold))
-            NavigationLink("Start") { BrewProcessView() }
+            NavigationLink("Start") { BrewCountdownView() }
         }
         .padding()
     }

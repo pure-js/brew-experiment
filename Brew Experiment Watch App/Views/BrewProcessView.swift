@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BrewProcessView: View {
+struct BrewCountdownView: View {
 
     struct props {
         var coffee: Int = 17
@@ -19,8 +19,11 @@ struct BrewProcessView: View {
     @State var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
     var body: some View {
-        VStack(spacing: 30){
-            Text("Timer: \(timeRemaining)").bold().fontWeight(.heavy)
+        VStack(spacing: 60){
+            Text("Countdown").bold().fontWeight(.heavy)
+            
+            Text(" \(timeRemaining)").bold().fontWeight(.heavy)
+                .font(.largeTitle)
                 .onReceive(timer){_ in
                     if timeRemaining>0{
                         timeRemaining -= 1
@@ -35,8 +38,8 @@ struct BrewProcessView: View {
     }
 }
 
-struct BrewProcessView_Previews: PreviewProvider {
+struct BrewCountdownView_Previews: PreviewProvider {
     static var previews: some View {
-        BrewProcessView()
+        BrewCountdownView()
     }
 }
